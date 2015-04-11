@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item>
+    <bitmap android:src="@drawable/m_arrow_downe"/>
+</item>
+<item>
+    <clip
+        android:clipOrientation="vertical"
+        android:gravity="bottom"
+        android:drawable="@drawable/m_arrow_downf"/>
+</item>
+</layer-list>

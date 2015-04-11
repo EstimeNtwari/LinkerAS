@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.estime.linker.FragmentB">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/downButton"
+        android:src="@drawable/down_arrow"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upButton"
+        android:src="@drawable/up_arrow"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/leftButton"
+        android:layout_toEndOf="@+id/leftButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftButton"
+        android:src="@drawable/left_arrow"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginBottom="43dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_above="@+id/downButton"
+        android:layout_toLeftOf="@+id/downButton"
+        android:layout_toStartOf="@+id/downButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightButton"
+        android:src="@drawable/right_arrow"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignTop="@+id/leftButton"
+        android:layout_toRightOf="@+id/downButton"
+        android:layout_toEndOf="@+id/downButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/fragBText"
+        android:layout_alignWithParentIfMissing="false"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/rightButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Status: Not Connected"
+        android:id="@+id/StatusText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/speedo"
+        android:layout_below="@+id/StatusText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedBar"
+        android:layout_alignRight="@+id/StatusText"
+        android:layout_alignEnd="@+id/StatusText"
+        android:layout_toEndOf="@+id/leftButton"
+        android:layout_below="@+id/speedo"
+        android:layout_alignLeft="@+id/StatusText"
+        android:layout_alignStart="@+id/StatusText"
+        android:indeterminate="false" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/motionVerticalUP"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/motion_updraw"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="125dp"
+        android:visibility="gone" />
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/motionVerticalDOWN"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/motion_downdraw"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="320dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

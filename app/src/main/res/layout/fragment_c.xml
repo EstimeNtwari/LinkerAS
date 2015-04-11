@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.estime.linker.FragmentC" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/BTToggle"
+        android:layout_marginLeft="42dp"
+
+        android:layout_marginStart="42dp"
+        android:layout_alignBottom="@+id/BlueToothLabel"
+        android:layout_toRightOf="@+id/BlueToothLabel"
+        android:layout_toEndOf="@+id/BlueToothLabel"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlueTooth"
+        android:id="@+id/BlueToothLabel"
+        android:textSize="25dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginStart="89dp"
+        android:layout_above="@+id/NfcToggle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Near Field"
+        android:id="@+id/NFCLabel"
+
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/BTToggle"
+        android:layout_toStartOf="@+id/BTToggle" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/NfcToggle"
+
+        android:layout_alignBottom="@+id/NFCLabel"
+        android:layout_alignLeft="@+id/BTToggle"
+        android:layout_alignStart="@+id/BTToggle"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MotionControl"
+        android:id="@+id/Motion"
+
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/NFCLabel"
+        android:layout_alignRight="@+id/NFCLabel"
+        android:layout_alignEnd="@+id/NFCLabel" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/MotionToggle"
+
+        android:layout_alignBottom="@+id/Motion"
+        android:layout_alignLeft="@+id/NfcToggle"
+        android:layout_alignStart="@+id/NfcToggle" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Linker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">About</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about_message">AboutMessage</string>
+    <string name="about">This app makes bluetooth connections easy.\nConnects bluetooth devices using NFC. \n\n\nVersion: 0.8 Beta \nAuthor: Estime Ntwari \nContact: estimentwari@gmail.com \n</string>
+
+</resources>
